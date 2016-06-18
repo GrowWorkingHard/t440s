@@ -1,0 +1,17 @@
+--- 50-synaptics.conf	2015-11-11 10:01:22.000000000 +0100
++++ 70-synaptics.conf	2016-06-16 10:17:14.673508178 +0200
+@@ -11,13 +11,10 @@
+         Identifier "touchpad catchall"
+         Driver "synaptics"
+         MatchIsTouchpad "on"
+-        Option "TapButton1" "1"
+-        Option "TapButton2" "2"
+-        Option "TapButton3" "3"
+ # This option is recommend on all Linux systems using evdev, but cannot be
+ # enabled by default. See the following link for details:
+ # http://who-t.blogspot.com/2010/11/how-to-ignore-configuration-errors.html
+-        MatchDevicePath "/dev/input/event*"
++#       MatchDevicePath "/dev/input/event*"
+ EndSection
+ 
+ Section "InputClass"
